@@ -45,6 +45,10 @@ inthenameofthemoon <- function(name){
 #' @export
 sailorswatch <- function(name){
 
+  chosen.palette <- sailorpalettes[[name]]
+  if (is.null(chosen.palette))
+    stop("Palette not found. Use 'sailorpalettes' to see available options.")
+
   n <- length(sailorpalettes[[name]])
 
   image(1:n, 1, as.matrix(1:n), col=(sailorpalettes[[name]]), axes=FALSE, xlab=paste0("\"",(name),"!\""), ylab="")
