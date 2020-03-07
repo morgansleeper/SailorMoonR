@@ -1,6 +1,8 @@
 #' List all Sailor Moon palettes
 #'
 #' Gives a list of all Sailor Moon palettes available to use with \code{inthenameofthemoon()}.
+#'
+#' @export
 sailorpalettes <- list(
 
   #Moon
@@ -21,6 +23,7 @@ sailorpalettes <- list(
 #' @examples
 #' inthenameofthemoon("MoonPrismPower")
 #' inthenameofthemoon("MoonHealingEscalation")
+#' @export
 inthenameofthemoon <- function(name){
 
   chosen.palette <- sailorpalettes[[name]]
@@ -39,6 +42,7 @@ inthenameofthemoon <- function(name){
 #' @keywords colors
 #' @examples
 #' sailorswatch("MoonPrincessHalation")
+#' @export
 sailorswatch <- function(name){
 
   n <- length(sailorpalettes[[name]])
