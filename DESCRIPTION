@@ -1,0 +1,14 @@
+Package: SailorMoonR
+Title: A Sailor Moon Palette Generator
+Date: 2020-03-07
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Morgan",
+           family = "Sleeper",
+           role = c("aut", "cre"),
+           email = "msleeper@macalester.edu")
+Description: Color palettes based on the (1992) Sailor Moon anime. Inspired by the R package 'wesanderson'.
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
