@@ -9,9 +9,6 @@ sailorswatch(name)
 \arguments{
 \item{name}{Name of the Sailor Moon color palette you want to see a sample of. Run \code{sailorpalettes} to see available options.}
 }
-\value{
-A vector of colors in hex notation.
-}
 \description{
 Generates a swatch sample of an available Sailor Moon color palette.
 }
