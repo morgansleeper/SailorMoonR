@@ -83,6 +83,7 @@ MoonPaletteIllumination <- function(name){
   display.name <- gsub("([[:lower:]])([[:upper:]])", "\\1 \\2", name)
 
   #Draw sample palette swatch
+  par(mar = c(2, 1, 1, 1))
   image(1:n, 1, as.matrix(1:n), col=(MoonPalettes[[name]]), axes=FALSE, xlab="", ylab="")
   title(sub=paste0("\"",display.name,"!\""), family = "sans", line=0.5, font.sub=4, ps=5, cex.sub=1.2)
 
