@@ -6,14 +6,22 @@ output: github_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   echo = TRUE,
+  comment = "#>",
   fig.path = "figures/",
   fig.height = 1
   )
 ```
 
 ![](skyline.jpg)
+Description text goes here!
 
-## GitHub Documents
+## Install
+
+```r
+devtools::install_github("morgansleeper/SailorMoonR")
+```
+
+## Usage
 
 This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
 
