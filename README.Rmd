@@ -24,14 +24,14 @@ devtools::install_github("morgansleeper/SailorMoonR")
 
 ## Using SailorMoonR
 
-```{r, usage,  fig.height=3, fig.width=8}
+```{r, usage,  fig.height=1, fig.width=3, fig.align='center'}
 library(SailorMoonR)
-
-# Use a palette
-inthenameofthemoon("MoonPrismPower")
 
 # See all available palettes
 MoonPaletteEnumeration
+
+# Use a palette
+inthenameofthemoon("MoonPrismPower")
 
 # See a sample swatch of a palette
 MoonPaletteIllumination("MoonPrismPower")
