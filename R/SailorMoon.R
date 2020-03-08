@@ -25,6 +25,8 @@ MoonPalettes <- list(
 
 )
 
+
+
 #' A Sailor Moon palette generator
 #'
 #' Generates color palettes drawn from the (1992) Sailor Moon anime.
@@ -38,13 +40,17 @@ MoonPalettes <- list(
 #' @export
 inthenameofthemoon <- function(name){
 
+  #Check for chosen palette in MoonPalettes list
   chosen.palette <- MoonPalettes[[name]]
   if (is.null(chosen.palette))
     stop("Palette not found. Use 'MoonPaletteEnumeration' to see available options.")
 
+  #Return the hex values of the chosen palette
   return(MoonPalettes[[name]])
 
 }
+
+
 
 #' List all Sailor Moon palettes
 #'
@@ -52,6 +58,8 @@ inthenameofthemoon <- function(name){
 #'
 #' @export
 MoonPaletteEnumeration <- names(MoonPalettes)
+
+
 
 #' Show a sample Sailor Moon palette
 #'
@@ -64,14 +72,17 @@ MoonPaletteEnumeration <- names(MoonPalettes)
 #' @export
 MoonPaletteIllumination <- function(name){
 
+  #Check for chosen palette in MoonPalettes list
   chosen.palette <- MoonPalettes[[name]]
   if (is.null(chosen.palette))
     stop("Palette not found. Use 'MoonPaletteEnumeration' to see available options.")
 
   n <- length(MoonPalettes[[name]])
 
+  #Add spaces between chosen palette name for sample display
   display.name <- gsub("([[:lower:]])([[:upper:]])", "\\1 \\2", name)
 
+  #Draw sample palette swatch
   image(1:n, 1, as.matrix(1:n), col=(MoonPalettes[[name]]), axes=FALSE, xlab="", ylab="")
   title(sub=paste0("\"",display.name,"!\""), family = "sans", line=0.5, font.sub=4, ps=5, cex.sub=1.2)
 
@@ -82,5 +93,5 @@ MoonPaletteIllumination <- function(name){
 
 #Extra
 #TokyoTower = c()
+#AzabuJuban = c()
 #GameCenterCrown = c()
-#I'llPunishYou = c()
