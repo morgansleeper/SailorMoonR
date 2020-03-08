@@ -7,7 +7,7 @@
 MoonPaletteIllumination(name)
 }
 \arguments{
-\item{name}{Name of the Sailor Moon color palette you want to see a sample of. Run \code{MoonPaletteEnumeration} to see available options.}
+\item{name}{Name of the Sailor Moon color palette you want to see a sample of. Use \code{MoonPaletteEnumeration} to see available options.}
 }
 \description{
 Generates a swatch sample of an available Sailor Moon color palette.

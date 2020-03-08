@@ -25,6 +25,11 @@ MoonPalettes <- list(
   VenusLoveMeChain = c("#FE0000","#7800B8","#FF0094","#FF5B00","#FDFF00"),
   CrescentBeam = c("#862699","#00B5B4","#00A6E2","#D7FEFF")
 
+  #Scenery
+  #MinatoDaylight = c()
+  #MinatoSunset = c()
+  #MinatoMoonlight = ()
+
 )
 
 
@@ -67,7 +72,7 @@ MoonPaletteEnumeration <- names(MoonPalettes)
 #'
 #' Generates a swatch sample of an available Sailor Moon color palette.
 #'
-#' @param name Name of the Sailor Moon color palette you want to see a sample of. Run \code{MoonPaletteEnumeration} to see available options.
+#' @param name Name of the Sailor Moon color palette you want to see a sample of. Use \code{MoonPaletteEnumeration} to see available options.
 #' @keywords colors
 #' @examples
 #' MoonPaletteIllumination("MoonPrincessHalation")
@@ -90,11 +95,3 @@ MoonPaletteIllumination <- function(name){
   title(sub=paste0("\"",display.name,"!\""), family = "sans", line=0.5, font.sub=4, ps=5, cex.sub=1.2)
 
 }
-
-
-#Palettes to be added:
-
-#Extra
-  #MinatoSkyline = c()
-  #TokyoTower = c()
-  #GameCenterCrown = c()
