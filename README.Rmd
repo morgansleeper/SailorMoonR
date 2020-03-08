@@ -26,7 +26,7 @@ devtools::install_github("morgansleeper/SailorMoonR")
 
 ## Using SailorMoonR
 
-```{r, usage, fig.height=2, fig.width=5}
+```{r, usage, fig.height=2, fig.width=10}
 #Loading SailorMoonR
 library(SailorMoonR)
 
