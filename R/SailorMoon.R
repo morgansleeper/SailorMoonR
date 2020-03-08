@@ -92,6 +92,6 @@ MoonPaletteIllumination <- function(name){
 #Palettes to be added:
 
 #Extra
-#TokyoTower = c()
-#AzabuJuban = c()
-#GameCenterCrown = c()
+  #MinatoSkyline = c()
+  #TokyoTower = c()
+  #GameCenterCrown = c()

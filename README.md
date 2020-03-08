@@ -9,7 +9,33 @@ SailorMoonR
 devtools::install_github("morgansleeper/SailorMoonR")
 ```
 
-## Usage
+## Using SailorMoonR
+
+``` r
+library(SailorMoonR)
+
+# Use a palette
+inthenameofthemoon("MoonPrismPower")
+> [1] "#FF0083" "#0C1EB8" "#00A294" "#FFBC4D"
+
+# See all available palettes
+MoonPaletteEnumeration
+>  [1] "MoonPrismPower"        "MoonTiaraAction"       "MoonHealingEscalation"
+>  [4] "MoonPrincessHalation"  "ShabonSpray"           "ShineAquaIllusion"    
+>  [7] "AkuryoTaisan"          "FireSoul"              "VenusLoveMeChain"     
+> [10] "CrescentBeam"          "SparklingWidePressure" "JupiterOakEvolution"
+
+# See a sample swatch of a palette
+MoonPaletteIllumination("MoonPrismPower")
+```
+
+![](figures/usage-1.png)<!-- -->
+
+## Palettes
+
+``` r
+inthenameofthemoon("MoonPrismPower")
+```
 
 This is an R Markdown format used for publishing markdown documents to
 GitHub. When you click the **Knit** button all R code chunks are run and

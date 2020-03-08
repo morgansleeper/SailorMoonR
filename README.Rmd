@@ -6,7 +6,8 @@ output: github_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   echo = TRUE,
-  comment = "#>",
+  collapse = TRUE,
+  comment = '>',
   fig.path = "figures/",
   fig.height = 1
   )
@@ -21,7 +22,27 @@ Description text goes here!
 devtools::install_github("morgansleeper/SailorMoonR")
 ```
 
-## Usage
+## Using SailorMoonR
+
+```{r, usage, fig.height=3, fig.width=8}
+library(SailorMoonR)
+
+# Use a palette
+inthenameofthemoon("MoonPrismPower")
+
+# See all available palettes
+MoonPaletteEnumeration
+
+# See a sample swatch of a palette
+MoonPaletteIllumination("MoonPrismPower")
+```
+
+## Palettes
+
+
+```r
+inthenameofthemoon("MoonPrismPower")
+```
 
 This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
 
