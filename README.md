@@ -138,7 +138,7 @@ inthenameofthemoon("CrescentBeam")
 
 ## Examples
 
-*Coming soon\!*
+Coming soon\!
 
 ## Acknowledgments
 
