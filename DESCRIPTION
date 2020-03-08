@@ -11,5 +11,8 @@ Description: Color palettes based on the (1992) Sailor Moon anime. Inspired by t
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Suggests:
+    ggplot2
 URL: https://github.com/morgansleeper/SailorMoonR
+BugReports: https://github.com/morgansleeper/SailorMoonR/issues
 RoxygenNote: 7.0.2
