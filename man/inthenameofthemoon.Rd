@@ -7,10 +7,10 @@
 inthenameofthemoon(name)
 }
 \arguments{
-\item{name}{Name of the Sailor Moon color palette you want to use. Run \code{sailorpalettes} to see available options.}
+\item{name}{Name of the Sailor Moon color palette you want to use. Use \code{MoonPaletteEnumeration} to see available options.}
 }
 \value{
-A vector of colors in hex notation.
+A vector of colors in hexadecimal notation.
 }
 \description{
 Generates color palettes drawn from the (1992) Sailor Moon anime.

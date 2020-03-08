@@ -1,15 +1,27 @@
-#' List all Sailor Moon palettes
-#'
-#' Gives a list of all Sailor Moon palettes available to use with \code{inthenameofthemoon()}.
-#'
-#' @export
-sailorpalettes <- list(
+#' List of all palette names and their colors
+MoonPalettes <- list(
 
   #Moon
   MoonPrismPower = c("#FF0083", "#0C1EB8", "#00A294","#FFBC4D"),
   MoonTiaraAction = c("#009F85","#F19EC5","#FDF298","#EC8300","#F2BFC9"),
   MoonHealingEscalation = c("#B175AC","#9697EA","#DB92F4","#FDFFDC"),
-  MoonPrincessHalation = c("#FDDBFF","#FF84FC","#E637F9","#67A8E4","#196CA4","#02D43F","#FAFF00")
+  MoonPrincessHalation = c("#FDDBFF","#FF84FC","#E637F9","#67A8E4","#196CA4","#02D43F","#FAFF00"),
+
+  #Mercury
+  ShabonSpray = c("#0059DC","#00738E", "#00B06A", "#48C900","#BF9DCD"),
+  ShineAquaIllusion = c("#004A7B","#00719C","#6F9FAC","#819EC0", "#916EA9","#D6C5D8","#FFDCE2"),
+
+  #Mars
+  AkuryoTaisan = c("#C52200", "#FF8593", "#FFD6A7", "#BF56CA", "#271F14"),
+  FireSoul = c("#FF9500","#FF0000","#54002E","#320000"),
+
+  #Venus
+  VenusLoveMeChain = c("#FE0000","#7800B8","#FF0094","#FF5B00","#FDFF00"),
+  CrescentBeam = c("#862699","#00B5B4","#00A6E2","#D7FEFF"),
+
+  #Jupiter
+  SparklingWidePressure = c("#48C95E","#BCFBFF","#89241B","#FF6AEA","#37816F","#122E62"),
+  JupiterOakEvolution = c("#76FFFF","#00FEA6","#009100","#004B20", "#021908")
 
 )
 
@@ -17,8 +29,8 @@ sailorpalettes <- list(
 #'
 #' Generates color palettes drawn from the (1992) Sailor Moon anime.
 #'
-#' @param name Name of the Sailor Moon color palette you want to use. Run \code{sailorpalettes} to see available options.
-#' @return A vector of colors in hex notation.
+#' @param name Name of the Sailor Moon color palette you want to use. Use \code{MoonPaletteEnumeration} to see available options.
+#' @return A vector of colors in hexadecimal notation.
 #' @keywords colors
 #' @examples
 #' inthenameofthemoon("MoonPrismPower")
@@ -26,59 +38,49 @@ sailorpalettes <- list(
 #' @export
 inthenameofthemoon <- function(name){
 
-  chosen.palette <- sailorpalettes[[name]]
+  chosen.palette <- MoonPalettes[[name]]
   if (is.null(chosen.palette))
-    stop("Palette not found. Use 'sailorpalettes' to see available options.")
+    stop("Palette not found. Use 'MoonPaletteEnumeration' to see available options.")
 
-  return(sailorpalettes[[name]])
+  return(MoonPalettes[[name]])
 
 }
+
+#' List all Sailor Moon palettes
+#'
+#' Gives a list of all Sailor Moon palettes available to use with \code{inthenameofthemoon()}.
+#'
+#' @export
+MoonPaletteEnumeration <- names(MoonPalettes)
 
 #' Show a sample Sailor Moon palette
 #'
 #' Generates a swatch sample of an available Sailor Moon color palette.
 #'
-#' @param name Name of the Sailor Moon color palette you want to see a sample of. Run \code{sailorpalettes} to see available options.
+#' @param name Name of the Sailor Moon color palette you want to see a sample of. Run \code{MoonPaletteEnumeration} to see available options.
 #' @keywords colors
 #' @examples
-#' sailorswatch("MoonPrincessHalation")
+#' MoonPaletteIllumination("MoonPrincessHalation")
 #' @export
-sailorswatch <- function(name){
+MoonPaletteIllumination <- function(name){
 
-  chosen.palette <- sailorpalettes[[name]]
+  chosen.palette <- MoonPalettes[[name]]
   if (is.null(chosen.palette))
-    stop("Palette not found. Use 'sailorpalettes' to see available options.")
+    stop("Palette not found. Use 'MoonPaletteEnumeration' to see available options.")
 
-  n <- length(sailorpalettes[[name]])
+  n <- length(MoonPalettes[[name]])
 
-  image(1:n, 1, as.matrix(1:n), col=(sailorpalettes[[name]]), axes=FALSE, xlab=paste0("\"",(name),"!\""), ylab="")
+  display.name <- gsub("([[:lower:]])([[:upper:]])", "\\1 \\2", name)
+
+  image(1:n, 1, as.matrix(1:n), col=(MoonPalettes[[name]]), axes=FALSE, xlab="", ylab="")
+  title(sub=paste0("\"",display.name,"!\""), family = "sans", line=0.5, font.sub=4, ps=5, cex.sub=1.2)
 
 }
 
-#Palettes to add:
 
-#Mercury
-#MercuryPower = c(),
-#ShabonSpray = c(),
-#ShineAquaIllusion = c(),
-#MercuryAquaRhapsody = c(),
-
-#Venus
-#VenusPower = c(),
-#CrescentBeam = c(),
-#VenusLoveMeChain = c(),
-
-#Mars
-#MarsPower = c(),
-#AkuryoTaisan = c(),
-#FireSoul = c(),
-
-#Jupiter
-#JupiterPower = c(),
-#SupremeThunder = c(),
-#JupiterFlowerHurricane = c(),
+#Palettes to be added:
 
 #Extra
 #TokyoTower = c()
 #GameCenterCrown = c()
-#I'llPunishYou
+#I'llPunishYou = c()

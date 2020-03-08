@@ -8,7 +8,8 @@ Authors@R:
            role = c("aut", "cre"),
            email = "msleeper@macalester.edu")
 Description: Color palettes based on the (1992) Sailor Moon anime. Inspired by the R package 'wesanderson'.
-License: What license it uses
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/morgansleeper/SailorMoonR
 RoxygenNote: 7.0.2
