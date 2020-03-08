@@ -1,8 +1,10 @@
 SailorMoonR
 ================
 
-![](skyline.jpg) Transform your R plots and graphics with the magical
-colors of Sailor Moon\! 🌙✨🌸
+![](skyline.jpg)
+
+Transform your R plots and graphics with the magical colors of Sailor
+Moon\! 🌙✨🌸
 
 ## Installation
 
