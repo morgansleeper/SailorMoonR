@@ -2,10 +2,7 @@ SailorMoonR
 ================
 
 ![](skyline.jpg) Transform your R plots and graphics with the magical
-colors of Sailor Moon\!
-
-*Project inspired by the [Wes Anderson
-Palettes](https://github.com/karthik/wesanderson) package.*
+colors of Sailor Moon\! 🌙✨🌸
 
 ## Install
 
@@ -13,34 +10,41 @@ Palettes](https://github.com/karthik/wesanderson) package.*
 devtools::install_github("morgansleeper/SailorMoonR")
 ```
 
+<center>
+
+![](luna.gif)
+
+</center>
+
 ## Using SailorMoonR
 
 ``` r
-#Loading SailorMoonR
+#Load SailorMoonR
 library(SailorMoonR)
 ```
 
-Use `MoonPaletteEnumeration` to view all available palettes:
+**Functions:**
+
+  - `MoonPaletteEnumeration`: list all available palettes
+  - `MoonPaletteIllumination()`: generate a sample swatch for a palette
+  - `inthenameofthemoon()`: use a palette (by having it return its color
+    values)
+
+<!-- end list -->
 
 ``` r
 # See all available palettes
 MoonPaletteEnumeration
 >  [1] "MoonPrismPower"        "MoonTiaraAction"       "MoonHealingEscalation"
 >  [4] "MoonPrincessHalation"  "ShabonSpray"           "ShineAquaIllusion"    
->  [7] "AkuryoTaisan"          "FireSoul"              "VenusLoveMeChain"     
-> [10] "CrescentBeam"          "SparklingWidePressure" "JupiterOakEvolution"
-```
+>  [7] "AkuryoTaisan"          "FireSoul"              "SparklingWidePressure"
+> [10] "JupiterOakEvolution"   "VenusLoveMeChain"      "CrescentBeam"
 
-To generate a sample swatch for a palette, use
-`MoonPaletteIllumination()`:
-
-``` r
 # See a sample swatch for a palette
 MoonPaletteIllumination("MoonPrismPower")
 ```
 
-![](figures/usage3-1.png)<!-- --> Finally, to use a palette (by having
-it return its color values), use `inthenameofthemoon()`:
+<img src="figures/usage2-1.png" style="display: block; margin: auto;" />
 
 ``` r
 # Use a palette
@@ -58,25 +62,41 @@ SailorMoonR currently has 12 palettes, ranging from 4-7 colors each:
 inthenameofthemoon("MoonPrismPower")
 ```
 
+<center>
+
 ![](figures/palettes-1.png)
+
+</center>
 
 ``` r
 inthenameofthemoon("MoonTiaraAction")
 ```
 
+<center>
+
 ![](figures/palettes-2.png)
+
+</center>
 
 ``` r
 inthenameofthemoon("MoonHealingEscalation")
 ```
 
+<center>
+
 ![](figures/palettes-3.png)
+
+</center>
 
 ``` r
 inthenameofthemoon("MoonPrincessHalation")
 ```
 
+<center>
+
 ![](figures/palettes-4.png)
+
+</center>
 
 ### Sailor Mercury
 
@@ -84,13 +104,21 @@ inthenameofthemoon("MoonPrincessHalation")
 inthenameofthemoon("ShabonSpray")
 ```
 
+<center>
+
 ![](figures/palettes-5.png)
+
+</center>
 
 ``` r
 inthenameofthemoon("ShineAquaIllusion")
 ```
 
+<center>
+
 ![](figures/palettes-6.png)
+
+</center>
 
 ### Sailor Mars
 
@@ -98,13 +126,21 @@ inthenameofthemoon("ShineAquaIllusion")
 inthenameofthemoon("AkuryoTaisan")
 ```
 
+<center>
+
 ![](figures/palettes-7.png)
+
+</center>
 
 ``` r
 inthenameofthemoon("FireSoul")
 ```
 
+<center>
+
 ![](figures/palettes-8.png)
+
+</center>
 
 ### Sailor Jupiter
 
@@ -112,13 +148,21 @@ inthenameofthemoon("FireSoul")
 inthenameofthemoon("SparklingWidePressure")
 ```
 
+<center>
+
 ![](figures/palettes-9.png)
+
+</center>
 
 ``` r
 inthenameofthemoon("JupiterOakEvolution")
 ```
 
+<center>
+
 ![](figures/palettes-10.png)
+
+</center>
 
 ### Sailor Venus
 
@@ -126,16 +170,31 @@ inthenameofthemoon("JupiterOakEvolution")
 inthenameofthemoon("VenusLoveMeChain")
 ```
 
+<center>
+
 ![](figures/palettes-11.png)
+
+</center>
 
 ``` r
 inthenameofthemoon("CrescentBeam")
 ```
 
+<center>
+
 ![](figures/palettes-12.png)
+
+</center>
 
 *More palettes to come\!*
 
 ## Examples
 
 *Coming soon\!*
+
+## Acknowledgments
+
+Project inspired by Karthik Ram’s [Wes Anderson
+Palettes](https://github.com/karthik/wesanderson) package.
+
+*Sailor Moon is © Naoko Takeuchi.*
