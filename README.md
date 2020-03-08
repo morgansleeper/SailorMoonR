@@ -52,8 +52,6 @@ inthenameofthemoon("MoonPrismPower")
 
 ## Palettes
 
-SailorMoonR currently has 12 palettes, ranging from 4-7 colors each:
-
 ### Sailor Moon 🌙
 
 ``` r
