@@ -54,7 +54,7 @@ inthenameofthemoon("MoonPrismPower")
 
 SailorMoonR currently has 12 palettes, ranging from 4-7 colors each:
 
-### Sailor Moon
+### Sailor Moon 🌙
 
 ``` r
 inthenameofthemoon("MoonPrismPower")
@@ -80,7 +80,7 @@ inthenameofthemoon("MoonPrincessHalation")
 
 ![](figures/palettes-4.png)
 
-### Sailor Mercury
+### Sailor Mercury ☿
 
 ``` r
 inthenameofthemoon("ShabonSpray")
@@ -94,7 +94,7 @@ inthenameofthemoon("ShineAquaIllusion")
 
 ![](figures/palettes-6.png)
 
-### Sailor Mars
+### Sailor Mars ♂️
 
 ``` r
 inthenameofthemoon("AkuryoTaisan")
@@ -108,7 +108,7 @@ inthenameofthemoon("FireSoul")
 
 ![](figures/palettes-8.png)
 
-### Sailor Jupiter
+### Sailor Jupiter ♃
 
 ``` r
 inthenameofthemoon("SparklingWidePressure")
@@ -122,7 +122,7 @@ inthenameofthemoon("JupiterOakEvolution")
 
 ![](figures/palettes-10.png)
 
-### Sailor Venus
+### Sailor Venus ♀️
 
 ``` r
 inthenameofthemoon("VenusLoveMeChain")
