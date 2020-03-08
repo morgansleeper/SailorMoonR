@@ -164,4 +164,4 @@ Coming soon!
 
 Project inspired by Karthik Ram's [Wes Anderson Palettes](https://github.com/karthik/wesanderson) package.
 
-_Sailor Moon is © Naoko Takeuchi._
+_Sailor Moon © Naoko Takeuchi._
