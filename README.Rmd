@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 ![](skyline.jpg)
 Transform your R plots and graphics with the magical colors of Sailor Moon!
 
-Project inspired by the [Wes Anderson Palettes](https://github.com/karthik/wesanderson) package.
+_Project inspired by the [Wes Anderson Palettes](https://github.com/karthik/wesanderson) package._
 
 ## Install
 
@@ -26,19 +26,27 @@ devtools::install_github("morgansleeper/SailorMoonR")
 
 ## Using SailorMoonR
 
-```{r, usage, fig.height=1, fig.width=10}
+```{r, usage1}
 #Loading SailorMoonR
 library(SailorMoonR)
-
+```
+Use `MoonPaletteEnumeration` to view all available palettes:
+```{r, usage2}
 # See all available palettes
 MoonPaletteEnumeration
-
-# Use a palette
-inthenameofthemoon("MoonPrismPower")
-
+```
+To generate a sample swatch for a palette, use `MoonPaletteIllumination()`:
+```{r, usage3, fig.height=1, fig.width=10}
 # See a sample swatch for a palette
 MoonPaletteIllumination("MoonPrismPower")
 ```
+Finally, to use a palette (by having it return its color values), use `inthenameofthemoon()`:
+```{r, usage4}
+# Use a palette
+inthenameofthemoon("MoonPrismPower")
+```
+
+
 
 ## Palettes
 ```{r, palettes, fig.height=1, fig.width=5, include=FALSE}

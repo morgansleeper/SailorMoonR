@@ -4,8 +4,8 @@ SailorMoonR
 ![](skyline.jpg) Transform your R plots and graphics with the magical
 colors of Sailor Moon\!
 
-Project inspired by the [Wes Anderson
-Palettes](https://github.com/karthik/wesanderson) package.
+*Project inspired by the [Wes Anderson
+Palettes](https://github.com/karthik/wesanderson) package.*
 
 ## Install
 
@@ -18,23 +18,35 @@ devtools::install_github("morgansleeper/SailorMoonR")
 ``` r
 #Loading SailorMoonR
 library(SailorMoonR)
+```
 
+Use `MoonPaletteEnumeration` to view all available palettes:
+
+``` r
 # See all available palettes
 MoonPaletteEnumeration
 >  [1] "MoonPrismPower"        "MoonTiaraAction"       "MoonHealingEscalation"
 >  [4] "MoonPrincessHalation"  "ShabonSpray"           "ShineAquaIllusion"    
 >  [7] "AkuryoTaisan"          "FireSoul"              "VenusLoveMeChain"     
 > [10] "CrescentBeam"          "SparklingWidePressure" "JupiterOakEvolution"
+```
 
-# Use a palette
-inthenameofthemoon("MoonPrismPower")
-> [1] "#FF0083" "#0C1EB8" "#00A294" "#FFBC4D"
+To generate a sample swatch for a palette, use
+`MoonPaletteIllumination()`:
 
+``` r
 # See a sample swatch for a palette
 MoonPaletteIllumination("MoonPrismPower")
 ```
 
-![](figures/usage-1.png)<!-- -->
+![](figures/usage3-1.png)<!-- --> Finally, to use a palette (by having
+it return its color values), use `inthenameofthemoon()`:
+
+``` r
+# Use a palette
+inthenameofthemoon("MoonPrismPower")
+> [1] "#FF0083" "#0C1EB8" "#00A294" "#FFBC4D"
+```
 
 ## Palettes
 
