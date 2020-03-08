@@ -41,7 +41,7 @@ MoonPaletteIllumination("MoonPrismPower")
 ```
 
 ## Palettes
-```{r, palettes, fig.height=2, fig.width=5, include=FALSE}
+```{r, palettes, fig.height=1, fig.width=5, include=FALSE}
 MoonPaletteIllumination("MoonPrismPower")
 MoonPaletteIllumination("MoonTiaraAction")
 MoonPaletteIllumination("MoonHealingEscalation")
