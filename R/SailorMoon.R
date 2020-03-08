@@ -15,13 +15,13 @@ MoonPalettes <- list(
   AkuryoTaisan = c("#C52200", "#FF8593", "#FFD6A7", "#BF56CA", "#271F14"),
   FireSoul = c("#FF9500","#FF0000","#54002E","#320000"),
 
-  #Venus
-  VenusLoveMeChain = c("#FE0000","#7800B8","#FF0094","#FF5B00","#FDFF00"),
-  CrescentBeam = c("#862699","#00B5B4","#00A6E2","#D7FEFF"),
-
   #Jupiter
   SparklingWidePressure = c("#48C95E","#BCFBFF","#89241B","#FF6AEA","#37816F","#122E62"),
-  JupiterOakEvolution = c("#76FFFF","#00FEA6","#009100","#004B20", "#021908")
+  JupiterOakEvolution = c("#76FFFF","#00FEA6","#009100","#004B20", "#021908"),
+
+  #Venus
+  VenusLoveMeChain = c("#FE0000","#7800B8","#FF0094","#FF5B00","#FDFF00"),
+  CrescentBeam = c("#862699","#00B5B4","#00A6E2","#D7FEFF")
 
 )
 

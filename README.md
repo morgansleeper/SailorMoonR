@@ -1,7 +1,11 @@
 SailorMoonR
 ================
 
-![](skyline.jpg) Description text goes here\!
+![](skyline.jpg) Transform your R plots and graphics with the magical
+colors of Sailor Moon\!
+
+Project inspired by the [Wes Anderson
+Palettes](https://github.com/karthik/wesanderson) package.
 
 ## Install
 
@@ -12,6 +16,7 @@ devtools::install_github("morgansleeper/SailorMoonR")
 ## Using SailorMoonR
 
 ``` r
+#Loading SailorMoonR
 library(SailorMoonR)
 
 # See all available palettes
@@ -25,21 +30,100 @@ MoonPaletteEnumeration
 inthenameofthemoon("MoonPrismPower")
 > [1] "#FF0083" "#0C1EB8" "#00A294" "#FFBC4D"
 
-# See a sample swatch of a palette
+# See a sample swatch for a palette
 MoonPaletteIllumination("MoonPrismPower")
 ```
 
-<img src="figures/usage-1.png" style="display: block; margin: auto;" />
+![](figures/usage-1.png)<!-- -->
 
 ## Palettes
+
+SailorMoonR currently has 12 palettes, ranging from 4-7 colors each:
+
+### Sailor Moon
 
 ``` r
 inthenameofthemoon("MoonPrismPower")
 ```
 
-This is an R Markdown format used for publishing markdown documents to
-GitHub. When you click the **Knit** button all R code chunks are run and
-a markdown file (.md) suitable for publishing to GitHub is generated.
+![](figures/palettes-1.png)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+``` r
+inthenameofthemoon("MoonTiaraAction")
+```
+
+![](figures/palettes-2.png)
+
+``` r
+inthenameofthemoon("MoonHealingEscalation")
+```
+
+![](figures/palettes-3.png)
+
+``` r
+inthenameofthemoon("MoonPrincessHalation")
+```
+
+![](figures/palettes-4.png)
+
+### Sailor Mercury
+
+``` r
+inthenameofthemoon("ShabonSpray")
+```
+
+![](figures/palettes-5.png)
+
+``` r
+inthenameofthemoon("ShineAquaIllusion")
+```
+
+![](figures/palettes-6.png)
+
+### Sailor Mars
+
+``` r
+inthenameofthemoon("AkuryoTaisan")
+```
+
+![](figures/palettes-7.png)
+
+``` r
+inthenameofthemoon("FireSoul")
+```
+
+![](figures/palettes-8.png)
+
+### Sailor Jupiter
+
+``` r
+inthenameofthemoon("SparklingWidePressure")
+```
+
+![](figures/palettes-9.png)
+
+``` r
+inthenameofthemoon("JupiterOakEvolution")
+```
+
+![](figures/palettes-10.png)
+
+### Sailor Venus
+
+``` r
+inthenameofthemoon("VenusLoveMeChain")
+```
+
+![](figures/palettes-11.png)
+
+``` r
+inthenameofthemoon("CrescentBeam")
+```
+
+![](figures/palettes-12.png)
+
+*More palettes to come\!*
+
+## Examples
+
+*Coming soon\!*
