@@ -145,4 +145,8 @@ Coming soon\!
 Project inspired by Karthik Ram’s [Wes Anderson
 Palettes](https://github.com/karthik/wesanderson) package.
 
-*Sailor Moon is © Naoko Takeuchi.*
+Written using and pairs nicely with sailorhg’s
+[fairyfloss](https://github.com/sailorhg/fairyfloss) theme (RStudio
+version [here](https://github.com/gadenbuie/rsthemes)).
+
+*Sailor Moon © Naoko Takeuchi.*
