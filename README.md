@@ -36,7 +36,9 @@ MoonPaletteEnumeration
 >  [1] "MoonPrismPower"        "MoonTiaraAction"       "MoonHealingEscalation"
 >  [4] "MoonPrincessHalation"  "ShabonSpray"           "ShineAquaIllusion"    
 >  [7] "AkuryoTaisan"          "FireSoul"              "SparklingWidePressure"
-> [10] "JupiterOakEvolution"   "VenusLoveMeChain"      "CrescentBeam"
+> [10] "JupiterOakEvolution"   "VenusLoveMeChain"      "CrescentBeam"         
+> [13] "MinatoDaylight"        "MinatoSunset"          "MinatoMoonlight"      
+> [16] "TokyoTower"
 
 # See a sample swatch for a palette
 MoonPaletteIllumination("MoonPrismPower")
@@ -134,7 +136,31 @@ inthenameofthemoon("CrescentBeam")
 
 ![](figures/palettes-12.png)
 
-*More palettes to come\!*
+### Tokyo 🌃
+
+``` r
+inthenameofthemoon("MinatoDaylight")
+```
+
+![](figures/palettes-13.png)
+
+``` r
+inthenameofthemoon("MinatoSunset")
+```
+
+![](figures/palettes-14.png)
+
+``` r
+inthenameofthemoon("MinatoMoonlight")
+```
+
+![](figures/palettes-15.png)
+
+``` r
+inthenameofthemoon("TokyoTower")
+```
+
+![](figures/palettes-16.png)
 
 ## Examples
 

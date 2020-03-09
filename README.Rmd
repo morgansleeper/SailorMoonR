@@ -68,6 +68,10 @@ MoonPaletteIllumination("SparklingWidePressure")
 MoonPaletteIllumination("JupiterOakEvolution")
 MoonPaletteIllumination("VenusLoveMeChain")
 MoonPaletteIllumination("CrescentBeam")
+MoonPaletteIllumination("MinatoDaylight")
+MoonPaletteIllumination("MinatoSunset")
+MoonPaletteIllumination("MinatoMoonlight")
+MoonPaletteIllumination("TokyoTower")
 ```
 
 ### Sailor Moon  🌙
@@ -97,7 +101,7 @@ inthenameofthemoon("MoonPrincessHalation")
 
 ![](figures/palettes-4.png)
 
-### Sailor Mercury ☿ 
+### Sailor Mercury ☿
 
 ```r
 inthenameofthemoon("ShabonSpray")
@@ -107,9 +111,9 @@ inthenameofthemoon("ShabonSpray")
 
 ```r
 inthenameofthemoon("ShineAquaIllusion")
-```
+``` 
 
-![](figures/palettes-6.png)
+![](figures/palettes-6.png) 
 
 ### Sailor Mars ♂️
 
@@ -154,7 +158,36 @@ inthenameofthemoon("CrescentBeam")
 
 ![](figures/palettes-12.png)
 
-_More palettes to come!_
+
+### Tokyo  🌃
+
+
+```r
+inthenameofthemoon("MinatoDaylight")
+```
+
+![](figures/palettes-13.png)
+
+```r
+inthenameofthemoon("MinatoSunset")
+```
+
+![](figures/palettes-14.png)
+
+
+```r
+inthenameofthemoon("MinatoMoonlight")
+```
+
+![](figures/palettes-15.png)
+
+
+```r
+inthenameofthemoon("TokyoTower")
+```
+
+![](figures/palettes-16.png)
+
 
 ## Examples
 

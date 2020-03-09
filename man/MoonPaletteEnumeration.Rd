@@ -4,7 +4,7 @@
 \name{MoonPaletteEnumeration}
 \alias{MoonPaletteEnumeration}
 \title{List all Sailor Moon palettes}
-\format{An object of class \code{character} of length 12.}
+\format{An object of class \code{character} of length 16.}
 \usage{
 MoonPaletteEnumeration
 }

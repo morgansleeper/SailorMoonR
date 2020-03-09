@@ -23,15 +23,15 @@ MoonPalettes <- list(
 
   #Venus
   VenusLoveMeChain = c("#FE0000","#7800B8","#FF0094","#FF5B00","#FDFF00"),
-  CrescentBeam = c("#862699","#00B5B4","#00A6E2","#D7FEFF")
+  CrescentBeam = c("#862699","#00B5B4","#00A6E2","#D7FEFF"),
 
   #Scenery
-  #MinatoDaylight = c()
-  #MinatoSunset = c()
-  #MinatoMoonlight = ()
+  MinatoDaylight = c("#56C66B","#009485","#DD9EBF","#1CCFC6", "#F1DFD9"),
+  MinatoSunset = c("#FFDCC7","#FF859F","#F779B4","#AF74BD","#A62E92","#7B3193"),
+  MinatoMoonlight = c("#0B426A","#007E89","#519F77","#97E6D6","#FEF6EB","#FFE3F8","#FFD7E5","#FF84A8","#B43797"),
+  TokyoTower = c("#FF69D3","#F2B8DA","#8AE0D8","#DCD5DC","#D90E7A")
 
 )
-
 
 
 #' A Sailor Moon palette generator
