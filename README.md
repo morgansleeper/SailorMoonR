@@ -4,11 +4,14 @@ SailorMoonR
 ![](skyline.jpg)
 
 Transform your R plots and graphics with the magical colors of Sailor
-Moon\! 🌙✨🌸
+Moon\!
+🌙✨🌸
 
 ## Installation
 
 ``` r
+install.packages("devtools") #If you don't already have devtools installed
+
 devtools::install_github("morgansleeper/SailorMoonR")
 ```
 
@@ -176,5 +179,3 @@ Written using and pairs nicely with sailorhg’s
 version [here](https://github.com/gadenbuie/rsthemes)).
 
 *Sailor Moon © Naoko Takeuchi.*
-
-![](skyline.jpg)
