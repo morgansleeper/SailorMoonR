@@ -1,7 +1,13 @@
 SailorMoonR
 ================
 
-![](skyline.jpg)
+<p float="left">
+
+<img src="palette_refs/tokyotower_palette.jpg" height=250 />
+<img src="palette_refs/minato-daylight_palette.jpg" height=250 />
+<img src="palette_refs/minato-sunset_palette.jpg" height=250 />
+
+</p>
 
 Transform your R plots and graphics with the magical colors of Sailor
 Moon\! 🌙✨🌸
@@ -176,3 +182,5 @@ Written using and pairs nicely with sailorhg’s
 version [here](https://github.com/gadenbuie/rsthemes)).
 
 *Sailor Moon © Naoko Takeuchi.*
+
+![](skyline.jpg)
