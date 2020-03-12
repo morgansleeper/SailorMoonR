@@ -200,15 +200,6 @@ leaflet(locs) %>%
 
 ![](figures/leaflet.png)
 
-### image 🖼
-
-``` r
-image(volcano, col=inthenameofthemoon("MinatoMoonlight"), axes=FALSE)
-title(sub="Maungawhau", family = "sans", line=0.5, font.sub=2, cex.sub=1.2)
-```
-
-![](figures/maungawhau.png)
-
 ## Acknowledgments
 
 Project inspired by Karthik Ram’s [Wes Anderson
