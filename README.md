@@ -167,7 +167,47 @@ inthenameofthemoon("TokyoTower")
 
 ## Examples
 
-Coming soon\!
+### ggplot2 📊
+
+``` r
+library(ggplot2)
+
+ggplot(distances, aes(x=Planet, y=Distance, fill=Planet)) + 
+  geom_col() +
+  xlab("") + ylab("Distance from Sun (AU)") +
+  scale_fill_manual(values = inthenameofthemoon("MoonTiaraAction")) +
+  guides(fill=FALSE)
+```
+
+![](figures/distances.png)
+
+### leaflet 🗺
+
+``` r
+library(leaflet)
+
+#Set up color palette
+pal <- colorFactor(palette = (col=(inthenameofthemoon("MoonPrismPower"))), domain = locs$Type)
+
+#Draw map
+leaflet(locs) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  addMarkers(label=~Name) %>%
+  addCircles(radius=150, weight=1, color=~pal(Type)) %>%
+  addLegend("topright", pal = pal, values = ~locs$Type, title = "Location type", opacity = .4) %>%
+  addMiniMap("bottomright", width=100, height=100, tiles = providers$CartoDB.Positron)
+```
+
+![](figures/leaflet.png)
+
+### image 🖼
+
+``` r
+image(volcano, col=inthenameofthemoon("MinatoMoonlight"), axes=FALSE)
+title(sub="Maungawhau", family = "sans", line=0.5, font.sub=2, cex.sub=1.2)
+```
+
+![](figures/maungawhau.png)
 
 ## Acknowledgments
 
