@@ -193,28 +193,7 @@ inthenameofthemoon("TokyoTower")
 
 ## Examples
 
-```{r, examples.data, include=FALSE}
-library(leaflet)
-locs <- (read.csv(textConnection("Long,Lat,Name,Type
-                                 139.737446,35.655775,Ichi-no-hashi Archway,Landmark
-                                 139.735494,35.654524,Amishiro Park,Park
-                                 139.731073,35.652894,Hikawa Jinja Shrine,Shrine
-                                 139.745447,35.65861,Tokyo Tower,Landmark
-                                 139.726296,35.651252,Arisugawa-no-Miya Memorial Park,Park
-                                 139.732962,35.656392,Kurayami-zaka,POI")))
-locs$Type <- factor(locs$Type, levels=c("Shrine","POI","Park","Landmark"))
-
-pal <- colorFactor(palette = (col=(inthenameofthemoon("MoonPrismPower"))), domain = locs$Type)
-```
-
-```{r}
-leaflet(locs, width=800, height=430) %>%
-  addProviderTiles(providers$CartoDB.Positron) %>%
-  addMarkers(label=~Name, popup=~Name) %>%
-  addCircles(radius=150, weight=1, color=~pal(Type), fillOpacity = .4) %>%
-  addLegend("topright", pal = pal, values = ~locs$Type, title = "Location type", opacity = .4) %>%
-  addMiniMap("bottomright", width=100, height=100, tiles = providers$CartoDB.Positron, toggleDisplay = TRUE)
-```
+Coming soon!
 
 
 ## Acknowledgments
