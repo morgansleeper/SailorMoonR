@@ -9,9 +9,13 @@ MoonPaletteIllumination(name, prism = 0)
 \arguments{
 \item{name}{Name of the Sailor Moon color palette you want to see a sample of. Use \code{MoonPaletteEnumeration} to see available options.}
 
-\item{prism}{Use `prism = n` to interpolate a palette of `n` number of colors. Useful if you want to use more color values than the palette provides. By default `prism` is set to 0 and will simply return the original palette.}
+\item{prism}{Use \code{prism = n} to interpolate a palette of n number of colors from the chosen palette. Useful if you want to use more color values than the palette provides. By default \code{prism} is set to 0 and will simply return the original palette.}
 }
 \description{
 Generates a swatch sample of an available Sailor Moon color palette.
+}
+\examples{
+MoonPaletteIllumination("MoonPrincessHalation")
+MoonPaletteIllumination("MoonTiaraAction", prism=32)
 }
 \keyword{colors}

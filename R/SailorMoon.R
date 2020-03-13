@@ -39,7 +39,7 @@ MoonPalettes <- list(
 #' Generates color palettes drawn from the (1992) Sailor Moon anime.
 #'
 #' @param name Name of the Sailor Moon color palette you want to use. Use \code{MoonPaletteEnumeration} to see available options.
-#' @param prism Use `prism = n` to interpolate a palette of `n` number of colors from the chosen palette. Useful if you want to use more color values than the palette provides. By default `prism` is set to 0 and will simply return the original palette.
+#' @param prism Use \code{prism = n} to interpolate a palette of n number of colors from the chosen palette. Useful if you want to use more color values than the palette provides. By default \code{prism} is set to 0 and will simply return the original palette.
 #' @return A vector of colors in hexadecimal notation.
 #' @keywords colors
 #' @examples
@@ -91,11 +91,11 @@ MoonPaletteEnumeration <- names(MoonPalettes)
 #' Generates a swatch sample of an available Sailor Moon color palette.
 #'
 #' @param name Name of the Sailor Moon color palette you want to see a sample of. Use \code{MoonPaletteEnumeration} to see available options.
-#' @param prism Use `prism = n` to interpolate a palette of `n` number of colors. Useful if you want to use more color values than the palette provides. By default `prism` is set to 0 and will simply return the original palette.
+#' @param prism Use \code{prism = n} to interpolate a palette of n number of colors from the chosen palette. Useful if you want to use more color values than the palette provides. By default \code{prism} is set to 0 and will simply return the original palette.
 #' @keywords colors
 #' @examples
 #' MoonPaletteIllumination("MoonPrincessHalation")
-#' MoonPaletteIllumination("MoonTiaraAction, prism=32)
+#' MoonPaletteIllumination("MoonTiaraAction", prism=32)
 #' @export
 MoonPaletteIllumination <- function(name, prism=0){
 
