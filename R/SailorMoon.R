@@ -43,8 +43,8 @@ MoonPalettes <- list(
 #' @return A vector of colors in hexadecimal notation.
 #' @keywords colors
 #' @examples
-#' inthenameofthemoon("MoonPrismPower") #Returns the palette as is
-#' inthenameofthemoon("MoonHealingEscalation", prism=32) #Returns the palette with 32 colors
+#' inthenameofthemoon("MoonPrismPower")
+#' inthenameofthemoon("MoonHealingEscalation", prism=16) #Returns the palette with 16 colors
 #' @export
 inthenameofthemoon <- function(name, prism=0){
 
@@ -95,6 +95,7 @@ MoonPaletteEnumeration <- names(MoonPalettes)
 #' @keywords colors
 #' @examples
 #' MoonPaletteIllumination("MoonPrincessHalation")
+#' MoonPaletteIllumination("MoonTiaraAction, prism=32)
 #' @export
 MoonPaletteIllumination <- function(name, prism=0){
 

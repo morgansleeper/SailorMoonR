@@ -55,6 +55,21 @@ inthenameofthemoon("MoonPrismPower")
 > [1] "#FF0083" "#0C1EB8" "#00A294" "#FFBC4D"
 ```
 
+**Prism:**
+
+If you need more colors than a given palette offers, you can generate a
+larger palette by adding the `prism` argument:
+
+``` r
+#Expand a palette with prism
+inthenameofthemoon("CrescentBeam", prism=6)
+> [1] "#862699" "#357BA9" "#00B2BD" "#00A9D8" "#56C9ED" "#D7FEFF"
+
+MoonPaletteIllumination("MinatoSunset", prism=128)
+```
+
+![](figures/usage3-1.png)<!-- -->
+
 ## Palettes
 
 ### Sailor Moon 🌙

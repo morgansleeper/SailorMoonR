@@ -55,6 +55,22 @@ inthenameofthemoon("MoonPrismPower")
 ```
 
 
+
+__Prism:__
+
+If you need more colors than a given palette offers, you can generate a larger palette by adding the `prism` argument:
+
+
+```{r, usage3, fig.height=1, fig.width=5}
+#Expand a palette with prism
+inthenameofthemoon("CrescentBeam", prism=6)
+
+MoonPaletteIllumination("MinatoSunset", prism=128)
+```
+
+
+
+
 ## Palettes
 ```{r, palettes, fig.height=1, fig.width=5, include=FALSE}
 MoonPaletteIllumination("MoonPrismPower")

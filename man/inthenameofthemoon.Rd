@@ -4,10 +4,12 @@
 \alias{inthenameofthemoon}
 \title{A Sailor Moon palette generator}
 \usage{
-inthenameofthemoon(name)
+inthenameofthemoon(name, prism = 0)
 }
 \arguments{
 \item{name}{Name of the Sailor Moon color palette you want to use. Use \code{MoonPaletteEnumeration} to see available options.}
+
+\item{prism}{Use `prism = n` to interpolate a palette of `n` number of colors from the chosen palette. Useful if you want to use more color values than the palette provides. By default `prism` is set to 0 and will simply return the original palette.}
 }
 \value{
 A vector of colors in hexadecimal notation.
@@ -17,6 +19,6 @@ Generates color palettes drawn from the (1992) Sailor Moon anime.
 }
 \examples{
 inthenameofthemoon("MoonPrismPower")
-inthenameofthemoon("MoonHealingEscalation")
+inthenameofthemoon("MoonHealingEscalation", prism=16) #Returns the palette with 16 colors
 }
 \keyword{colors}
