@@ -243,6 +243,27 @@ leaflet(locs) %>%
 ![](figures/leaflet.png)
 
 
+### seewave 🌊
+
+```r
+library(seewave)
+
+spectro(tico, palette=colorRampPalette(inthenameofthemoon("MinatoSunset")), 
+  collevels=seq(-50,0,1), osc=TRUE, flim=c(2,6), tlim=c(0.5,1.4), heights=c(4,2))
+```
+
+![](figures/tico.png)
+
+
+### image 🌋
+
+```r
+image(volcano, col=inthenameofthemoon("MinatoMoonlight", prism=32), axes=FALSE)
+title(sub="Maungawhau", family = "sans", line=0.5, font.sub=2, cex.sub=1.2)
+```
+
+![](figures/maungawhau.png)
+
 ## Acknowledgments
 
 Project inspired by Karthik Ram's [Wes Anderson Palettes](https://github.com/karthik/wesanderson) package.  
