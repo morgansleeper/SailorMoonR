@@ -39,21 +39,39 @@ MoonPalettes <- list(
 #' Generates color palettes drawn from the (1992) Sailor Moon anime.
 #'
 #' @param name Name of the Sailor Moon color palette you want to use. Use \code{MoonPaletteEnumeration} to see available options.
+#' @param prism Use `prism = n` to interpolate a palette of `n` number of colors from the chosen palette. Useful if you want to use more color values than the palette provides. By default `prism` is set to 0 and will simply return the original palette.
 #' @return A vector of colors in hexadecimal notation.
 #' @keywords colors
 #' @examples
-#' inthenameofthemoon("MoonPrismPower")
-#' inthenameofthemoon("MoonHealingEscalation")
+#' inthenameofthemoon("MoonPrismPower") #Returns the palette as is
+#' inthenameofthemoon("MoonHealingEscalation", prism=32) #Returns the palette with 32 colors
 #' @export
-inthenameofthemoon <- function(name){
+inthenameofthemoon <- function(name, prism=0){
 
   #Check for chosen palette in MoonPalettes list
   chosen.palette <- MoonPalettes[[name]]
+  n <- prism
+
   if (is.null(chosen.palette))
     stop("Palette not found. Use 'MoonPaletteEnumeration' to see available options.")
 
-  #Return the hex values of the chosen palette
-  return(MoonPalettes[[name]])
+  #If prism is specified (i.e. prism!=0), then interpolate a palette of that many colors
+  if(prism!=0){
+
+    #Interpolate n number of colors between the palette colors
+    prismpalette <- grDevices::colorRampPalette(MoonPalettes[[name]])(n)
+
+    #Return the hex values
+    return(prismpalette)
+
+  }
+
+  #If prism isn't specified (i.e. prism==0), then just return the hex values of the chosen palette
+  else{
+
+    return(MoonPalettes[[name]])
+
+  }
 
 }
 
@@ -73,25 +91,46 @@ MoonPaletteEnumeration <- names(MoonPalettes)
 #' Generates a swatch sample of an available Sailor Moon color palette.
 #'
 #' @param name Name of the Sailor Moon color palette you want to see a sample of. Use \code{MoonPaletteEnumeration} to see available options.
+#' @param prism Use `prism = n` to interpolate a palette of `n` number of colors. Useful if you want to use more color values than the palette provides. By default `prism` is set to 0 and will simply return the original palette.
 #' @keywords colors
 #' @examples
 #' MoonPaletteIllumination("MoonPrincessHalation")
 #' @export
-MoonPaletteIllumination <- function(name){
+MoonPaletteIllumination <- function(name, prism=0){
 
   #Check for chosen palette in MoonPalettes list
   chosen.palette <- MoonPalettes[[name]]
   if (is.null(chosen.palette))
     stop("Palette not found. Use 'MoonPaletteEnumeration' to see available options.")
 
-  n <- length(MoonPalettes[[name]])
-
   #Add spaces between chosen palette name for sample display
   display.name <- gsub("([[:lower:]])([[:upper:]])", "\\1 \\2", name)
+
+  if(prism!=0){
+
+  #Set number of colors to prism value
+  n <- prism
+
+  #Interpolate n number of colors between the palette colors
+  prismpalette <- grDevices::colorRampPalette(MoonPalettes[[name]])(n)
+
+  #Draw sample palette swatch
+  par(mar = c(2, 1, 1, 1))
+  image(1:n, 1, as.matrix(1:n), col=(prismpalette), axes=FALSE, xlab="", ylab="")
+  title(sub=paste0("\"",display.name,"!\""), family = "sans", line=0.5, font.sub=4, ps=5, cex.sub=1.2)
+
+  }
+
+  else{
+
+  #Set number of colors to palette default
+  n <- length(MoonPalettes[[name]])
 
   #Draw sample palette swatch
   par(mar = c(2, 1, 1, 1))
   image(1:n, 1, as.matrix(1:n), col=(MoonPalettes[[name]]), axes=FALSE, xlab="", ylab="")
   title(sub=paste0("\"",display.name,"!\""), family = "sans", line=0.5, font.sub=4, ps=5, cex.sub=1.2)
+
+  }
 
 }
