@@ -19,6 +19,7 @@ Generates color palettes drawn from the (1992) Sailor Moon anime.
 }
 \examples{
 inthenameofthemoon("MoonPrismPower")
+
 inthenameofthemoon("MoonHealingEscalation", prism=16) #Returns the palette with 16 colors
 }
 \keyword{colors}

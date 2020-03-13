@@ -16,6 +16,7 @@ Generates a swatch sample of an available Sailor Moon color palette.
 }
 \examples{
 MoonPaletteIllumination("MoonPrincessHalation")
+
 MoonPaletteIllumination("MoonTiaraAction", prism=32)
 }
 \keyword{colors}

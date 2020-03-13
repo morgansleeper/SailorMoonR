@@ -42,6 +42,7 @@ MoonPalettes <- list(
 #' @keywords colors
 #' @examples
 #' inthenameofthemoon("MoonPrismPower")
+#'
 #' inthenameofthemoon("MoonHealingEscalation", prism=16) #Returns the palette with 16 colors
 #' @export
 inthenameofthemoon <- function(name, prism=0){
@@ -93,6 +94,7 @@ MoonPaletteEnumeration <- names(MoonPalettes)
 #' @keywords colors
 #' @examples
 #' MoonPaletteIllumination("MoonPrincessHalation")
+#'
 #' MoonPaletteIllumination("MoonTiaraAction", prism=32)
 #' @export
 MoonPaletteIllumination <- function(name, prism=0){
