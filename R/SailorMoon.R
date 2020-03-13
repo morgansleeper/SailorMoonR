@@ -1,6 +1,4 @@
-### inthenameofthemoon -> MoonPaletteInvocation ?!
-
-#' List of all palette names and their colors
+# List of all palette names and their colors
 MoonPalettes <- list(
 
   #Moon
