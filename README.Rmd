@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
   )
 ```
 
-![](skyline.jpg)
+![](figures/skyline.jpg)
 
 
 Transform your R plots and graphics with the magical colors of Sailor Moon! 🌙✨🌸
@@ -28,7 +28,7 @@ devtools::install_github("morgansleeper/SailorMoonR")
 ```
 
 
-![](luna.gif)
+![](figures/luna.gif)
 
 
 ## Using SailorMoonR
