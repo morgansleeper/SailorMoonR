@@ -1,7 +1,7 @@
 SailorMoonR
 ================
 
-![](skyline.jpg)
+![](figures/skyline.jpg)
 
 Transform your R plots and graphics with the magical colors of Sailor
 Moon\!
@@ -15,7 +15,7 @@ install.packages("devtools") #If you don't already have devtools installed
 devtools::install_github("morgansleeper/SailorMoonR")
 ```
 
-![](luna.gif)
+![](figures/luna.gif)
 
 ## Using SailorMoonR
 
