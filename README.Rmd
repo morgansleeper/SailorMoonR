@@ -1,5 +1,5 @@
 ---
-title: "SailorMoonR"
+title: "SailorMoonR 🌙"
 output: github_document
 ---
 
