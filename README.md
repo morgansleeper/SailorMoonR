@@ -1,4 +1,4 @@
-SailorMoonR
+SailorMoonR 🌙
 ================
 
 ![](figures/skyline.jpg)
