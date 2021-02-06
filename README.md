@@ -187,7 +187,7 @@ inthenameofthemoon("TokyoTower")
 ``` r
 library(ggplot2)
 
-ggplot(distances, aes(x=Planet, y=Distance, fill=Planet)) + 
+ggplot(distances, aes(x=Planet, y=Distance, fill=Planet)) +
   geom_col() +
   xlab("") + ylab("Distance from Sun (AU)") +
   scale_fill_manual(values = inthenameofthemoon("MoonTiaraAction")) +
@@ -220,7 +220,7 @@ leaflet(locs) %>%
 ``` r
 library(seewave)
 
-spectro(tico, palette=colorRampPalette(inthenameofthemoon("MinatoSunset")), 
+spectro(tico, palette=colorRampPalette(inthenameofthemoon("MinatoSunset")),
   collevels=seq(-50,0,1), osc=TRUE, flim=c(2,6), tlim=c(0.5,1.4), heights=c(4,2))
 ```
 
@@ -235,13 +235,13 @@ title(sub="Maungawhau", family = "sans", line=0.5, font.sub=2, cex.sub=1.2)
 
 ![](figures/maungawhau.png)
 
-## Acknowledgments
+## Acknowledgments & extras
 
 Project inspired by Karthik Ram’s [Wes Anderson
 Palettes](https://github.com/karthik/wesanderson) package.
 
 Written using and pairs nicely with sailorhg’s
 [fairyfloss](https://github.com/sailorhg/fairyfloss) theme (RStudio
-version [here](https://github.com/gadenbuie/rsthemes)).
+version available [here](https://github.com/gadenbuie/rsthemes)).
 
 *Sailor Moon © Naoko Takeuchi.*
